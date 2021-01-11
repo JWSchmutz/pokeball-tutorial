@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokeball</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .pokeball {
+            width: 420px;
+            height: 420px;
+            background-color: black;
+            border-radius: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .half-ball {
+            width: 400px;
+            height: 200px;
+        }
+
+        .top-half {
+            background-color: red;
+            border-top-left-radius: 400px;
+            border-top-right-radius: 400px;
+        }
+
+        .bottom-half {
+            background-color: white;
+            border-bottom-left-radius: 400px;
+            border-bottom-right-radius: 400px;
+        }
+
+        .center-circle {
+            background-color: white;
+            border-color: black;
+            border-style: solid;
+            border-radius: 50%;
+            border-width: 5px;
+        }
+
+        .center-circle-outer {
+            width: 130px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border-width: 15px;
+        }
+
+        .center-circle-inner {
+            width: 70px;
+            height: 70px;
+        }
+
+        .black-bar {
+            height: 65px;
+            width: 400px;
+            background-color: black;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pokeball">
+        <div class="half-ball top-half"></div>
+        <div class="black-bar"></div>
+        <div class="center-circle center-circle-outer">
+            <div class="center-circle center-circle-inner"></div>
+        </div>
+        <div class="half-ball bottom-half"></div>
+    </div>
+</body>
+
+</html>
